@@ -9,4 +9,12 @@ router.route('/videos').get((request, response) => {
     });
 });
 
+router.route('/videos').post((request, response) => {
+	
+
+    Video.create({
+		path: ""
+	})
+});
+
 module.exports = router;
